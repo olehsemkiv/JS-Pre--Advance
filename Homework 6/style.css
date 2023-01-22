@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.container {
+    margin: 100px auto;
+    width: 700px;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.input-text {
+    width: 500px;
+    height: 50px;
+    margin-top: 35px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid gray;
+
+}
+
+
+
+
+.input-text:active {
+    outline: 2px solid #54a0ff;
+}
+
+.btn_sing_up,
+.btn_sing_in {
+    width: 500px;
+    height: 50px;
+    margin-top: 35px;
+    border-radius: 5px;
+    background: transparent;
+    background-color: #54a0ff;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn_sing_up:disabled {
+    background-color: #0d4b97;
+    cursor: default;
+}
+
+.btn_sing_in {
+    background-color: #079992;
+}
+
+.check_box {
+    margin-top: 35px;
+
+
+}
+
+.confirm_window {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0px 5px 71px 100px rgba(34, 60, 80, 0.34);
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.top_block {
+    width: 100%;
+    height: 50%;
+    background-color: #079992;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_block img {
+    width: 175px;
+    height: 175px;
+    margin-bottom: -130px;
+}
+
+.bot_block {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.bot_block h1 {
+    font-size: 37px;
+
+    font-weight: normal;
+}
+
+.bot_block p {
+    margin-top: 20px;
+}
+
+.star_btn {
+    margin-top: 40px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    background-color: #f6b93b;
+    border: none;
+    padding: 15px;
+    width: 180px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.star_btn:hover {
+    background-color: #54a0ff;
+}
+
+.error_window_fname,
+.error_window_lname,
+.error_window_email,
+.error_window_pass {
+    background-color: red;
+    width: 277px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 5px;
+    display: none;
+    color: white;
+}
+
+.error_sing_in {
+    background-color: red;
+    width: 277px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 5px;
+    display: none;
+    color: white;
+}
+
+.error_dublicat_email{
+    background-color: red;
+    width: 277px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 5px;
+    display: none;
+    color: white;
+}
+
+.error_window_fname {
+    position: absolute;
+    top: 117px;
+    left: 99px;
+}
+
+.error_window_lname {
+    left: 99px;
+    position: absolute;
+    top: 202px;
+}
+
+.error_window_email {
+    position: absolute;
+    top: 287px;
+    left: 99px;
+}
+
+.error_window_pass {
+    position: absolute;
+    top: 372px;
+    left: 99px;
+}
+
+.check_fname,
+.check_lname,
+.check_email,
+.check_pass,
+.uncheck_fname,
+.uncheck_lname,
+.uncheck_email,
+.uncheck_pass {
+    position: absolute;
+    display: none;
+}
+
+.check_fname,
+.uncheck_fname {
+    top: 97px;
+    left: 562px;
+}
+
+.check_lname,
+.uncheck_lname {
+    top: 182px;
+    left: 562px;
+}
+
+.check_email,
+.uncheck_email {
+    top: 267px;
+    left: 562px;
+}
+
+.check_pass,
+.uncheck_pass {
+    top: 352px;
+    left: 562px;
+}
+
+.sing_in_now,
+.sing_up_now {
+    margin-top: 30px;
+    color: blue;
+    cursor: pointer;
+    transition: all 0, 4s;
+    font-size: 18px;
+}
+
+.sing_in_now:hover,
+.sing_up_now:hover {
+    color: #1e75df;
+    font-size: 15px;
+}
+
+
+.active {
+    display: flex;
+}

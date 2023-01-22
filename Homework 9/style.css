@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto;
+}
+
+.left_block,
+.right_block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.left_block {
+    position: relative;
+}
+
+.heading {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.input_elem {
+    padding: 7px;
+    font-size: 17px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+    padding-left: 13px;
+}
+
+.input_elem:focus {
+    border: 2px solid blue;
+}
+
+.btn_add {
+    margin-left: 20px;
+    width: 100px;
+    height: 38px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #10ac84;
+    background: transparent;
+    color: #10ac84;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+.btn_add:disabled {
+    background-color: red;
+    color: white;
+}
+
+.btn_add:hover {
+    background-color: #10ac84;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+.row p {
+    font-weight: 600;
+}
+
+.edit_btn {
+    margin-left: 20px;
+    width: 80px;
+    height: 38px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.4s;
+    border: none;
+    margin-top: 0px;
+}
+
+.delete_btn {
+    margin-left: 20px;
+    width: 80px;
+    height: 38px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.4s;
+    border: none;
+    margin-top: 0px;
+}
+
+
+td {
+    text-align: center;
+}
+
+.btn_edit_user {
+    margin-left: 20px;
+    width: 100px;
+    height: 38px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #10ac84;
+    background: transparent;
+    color: #10ac84;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.4s;
+    display: none;
+    position: absolute;
+    top: 374px;
+}
+
+.active {
+    display: block;
+}
+
+.no_active {
+    display: none;
+}
